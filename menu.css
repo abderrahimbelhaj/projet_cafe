@@ -1,0 +1,103 @@
+/* Styles pour la page du menu */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ca1d1d;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.menu-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #252525;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* Formulaire de recherche */
+form {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form input[type="text"] {
+    padding: 10px;
+    width: 60%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #f3961c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #2ecc71;
+}
+
+/* Menu items */
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.menu-item {
+   
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 200px;
+    transition: transform 0.3s;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+}
+
+.menu-item img {
+    max-width: 100%;
+    border-radius: 18px;
+}
+
+.menu-item h3 {
+    margin: 15px 0;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.menu-item p {
+    font-size: 1rem;
+    color: white;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .menu-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form input[type="text"] {
+        width: 80%;
+    }
+}
